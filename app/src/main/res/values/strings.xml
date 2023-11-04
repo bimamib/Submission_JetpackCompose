@@ -8,5 +8,7 @@
     <string name="my_name">Bima Prasetio</string>
     <string name="my_email">bimaprast1601@gmail.com</string>
     <string name="empty_fav">No Favorite Anime Yet</string>
+    <string name="back">Back</string>
     <string name="category_list">Anime List Menu</string>
+    <string name="add_favorite">Add Favorite</string>
 </resources>
