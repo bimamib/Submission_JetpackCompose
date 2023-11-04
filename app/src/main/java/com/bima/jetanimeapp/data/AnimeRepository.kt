@@ -20,6 +20,20 @@ class AnimeRepository {
 
     fun getSortedAndGroupedAnime(): Flow<Map<Char, List<AnimeItem>>> {
         return flow {
+            val sortedAnimes = animeItem.sortedBy { it.item.animeName }
+            val groupedAnimes = sortedAnimes.groupBy { it.item.animeName[0] }
+            emit(groupedAnimes)
+        }
+    }
+
+    fun getAnimeItemById(animeId: String): AnimeItem {
+        return animeItem.first {
+            it.item.id == animeId
+        }
+    }
+
+    fun searchAnimes(query: String): Flow<List<AnimeItem>> {
+        return flow {
             val filteredAnimes = animeItem.filter {
                 it.item.animeName.contains(query, ignoreCase = true)
             }

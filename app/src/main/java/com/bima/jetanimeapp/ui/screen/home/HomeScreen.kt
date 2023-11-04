@@ -2,24 +2,34 @@ package com.bima.jetanimeapp.ui.screen.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.bima.jetanimeapp.di.Injection
+import com.bima.jetanimeapp.helper.ViewModelFactory
+import com.bima.jetanimeapp.model.AnimeItem
+import com.bima.jetanimeapp.ui.common.UiState
+import com.bima.jetanimeapp.ui.components.AnimeListItem
+import com.bima.jetanimeapp.ui.components.SearchBar
 
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    viewModel: HomeViewModel = ViewModel(
-        factory = ViewModelFactory(Injection.provideRepository))
+    viewModel: HomeViewModel = viewModel(
+        factory = ViewModelFactory(Injection.provideRepository())
     ),
-    navigateToDetail: (String) -> Unit
+    navigateToDetail: (String) -> Unit,
 ) {
     val searchResult by viewModel.searchResult.collectAsState(initial = emptyList())
     val query by viewModel.query.collectAsState(initial = "")
@@ -31,7 +41,7 @@ fun HomeScreen(
             }
 
             is UiState.Success -> {
-                Coloumn {
+                Column {
                     SearchBar(
                         query = query,
                         onQueryChange = { newQuery ->
@@ -56,39 +66,38 @@ fun HomeScreen(
 
 @Composable
 fun HomeContent(
-    groupedAnimes: Map<Char, List<AnimesItem>>,
-    searchResult: List<AnimesItem>,
+    groupedAnimes: Map<Char, List<AnimeItem>>,
+    searchResult: List<AnimeItem>,
     modifier: Modifier = Modifier,
     navigateToDetail: (String) -> Unit,
 ) {
-    Box(
-        modifier = modifier.padding(8.dp)
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(160.dp),
+        contentPadding = PaddingValues(16.dp),
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+        modifier = modifier.testTag("AnimeList")
     ) {
-        LazyColumn(
-            contentPadding = PaddingValues(bottom = 80.dp),
-            modifier = modifier.testTag("AnimesList")
-        ) {
-            if (searchResult.isNotEmpty()) {
-                item(searchResult, key = { it.item.id }) { data ->
+        if (searchResult.isNotEmpty()) {
+            items(searchResult, key = { it.item.id }) { data ->
+                AnimeListItem(
+                    animeName = data.item.animeName,
+                    bannerUrl = data.item.bannerUrl,
+                    modifier = Modifier.clickable {
+                        navigateToDetail(data.item.id)
+                    }
+                )
+            }
+        } else {
+            groupedAnimes.entries.forEach { (_, animeItems) ->
+                items(animeItems) { data ->
                     AnimeListItem(
                         animeName = data.item.animeName,
                         bannerUrl = data.item.bannerUrl,
                         modifier = Modifier.clickable {
-                            navigateToDetail(data.item.data)
+                            navigateToDetail(data.item.id)
                         }
                     )
-                }
-            } else {
-                groupedAnimes.entries.forEach { (_, animeItems) ->
-                    items(animeItems) { data ->
-                        AnimeListItem(
-                            animeName = data.item.animeName,
-                            bannerUrl = data.item.bannerUrl,
-                            modifier = Modifier.clickable {
-                                navigateToDetail(data.item.id)
-                            }
-                        )
-                    }
                 }
             }
         }

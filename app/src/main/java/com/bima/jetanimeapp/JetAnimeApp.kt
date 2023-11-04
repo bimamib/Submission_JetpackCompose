@@ -15,6 +15,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.bima.jetanimeapp.model.Anime
 import com.bima.jetanimeapp.navigation.Screen
 import com.bima.jetanimeapp.ui.screen.home.HomeScreen
 
@@ -78,10 +79,9 @@ private fun BottomBar(
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
-        val navigationItems = listOf(
-            NavigationItem(
+        val animeItems = listOf(
+            AnimeItem(
                 title = stringResource(R.string.menu_home),
-
             )
         )
     }
