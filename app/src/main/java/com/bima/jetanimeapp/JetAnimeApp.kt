@@ -1,7 +1,5 @@
 package com.bima.jetanimeapp
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -15,9 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -26,10 +22,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import coil.compose.AsyncImage
 import com.bima.jetanimeapp.navigation.NavigationItem
 import com.bima.jetanimeapp.navigation.Screen
-import com.bima.jetanimeapp.ui.components.SearchBar
 import com.bima.jetanimeapp.ui.screen.about.AboutScreen
 import com.bima.jetanimeapp.ui.screen.detail.DetailScreen
 import com.bima.jetanimeapp.ui.screen.favorite.FavoriteScreen
