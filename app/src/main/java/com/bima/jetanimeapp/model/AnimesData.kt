@@ -44,20 +44,20 @@ object AnimesData {
                     "\n\nViz Media memiliki lisensi manga dan anime produksi Amerika Utara. Viz telah menerbitkan seri ini ke dalam majalah mereka, yaitu Shonen Jump, serta beberapa volume. Seri anime ini mulai ditayangkan di Amerika Serikat dan Kanada pada tahun 2005, dan kemudian di Inggris dan Australia pada tahun 2006 dan 2007.",
             "2002",
             "Masashi Kishimoto",
-            "https://assets.cdn.moviepilot.de/files/289cc208d3ac718759363f8c781d607cd5454300928b4746c5541d74ec20/copyright/naruto-poster-01.jpg",
+            "https://cdn1-production-images-kly.akamaized.net/SkAOUdtnLdYGhymJUCJDBBKoBLo=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/653825/original/naruto-anime-naruto-33923256-1920-1080.jpg",
             "https://static.wikia.nocookie.net/fictional-battle-omniverse/images/6/62/Masashi_Kishimoto.png/revision/latest?cb=20151227013410"
         ),
 
         Anime(
             "5",
             "Demon Slayer: Kimetsu no Yaiba",
-            "Kimetsu no Yaiba (Jepang: 鬼滅の刃, terj. har. \"Korps Pembasmi Iblis\"[4]), yang diterbitkan di Indonesia dengan judul Demon Slayer: Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotōge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis setelah keluarganya dibantai oleh iblis dan adik perempuannya yang bernama Nezuko diubah menjadi iblis." +
+            "Kimetsu no Yaiba (Jepang: 鬼滅の刃, terj. har. \"Korps Pembasmi Iblis\"), yang diterbitkan di Indonesia dengan judul Demon Slayer: Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotōge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis setelah keluarganya dibantai oleh iblis dan adik perempuannya yang bernama Nezuko diubah menjadi iblis." +
                     "\n\nManga ini dimuat berseri dalam majalah Weekly Shōnen Jump terbitan Shueisha sejak bulan Februari 2016 hingga Mei 2020, dan telah dibundel menjadi dua puluh satu volume tankōbon hingga bulan Juli 2020. Manga ini diterbitkan dalam bahasa Inggris oleh Viz Media, sementara Shueisha merilisnya dalam bahasa Inggris dan Spanyol secara serentak dengan perilisannya di Jepang melalui platform Manga Plus milik mereka." +
                     "\n\nManga ini diadaptasi menjadi sebuah seri anime yang diproduksi oleh Ufotable dan ditayangkan sejak bulan April hingga September 2019. Sekuel berupa film layar lebar diumumkan ketika episode terakhir disiarkan dan dijadwalkan untuk dirilis pada bulan Oktober 2020.",
             "2019",
             "Koyoharu Gotōge",
-            "https://scontent.fcgk42-1.fna.fbcdn.net/v/t39.30808-6/240932807_4042044779240258_4108958082190960483_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dh87sLAM2RYAX__WufN&_nc_ht=scontent.fcgk42-1.fna&oh=00_AfDcatlsehgyuwcJD8iyc9snVhEmG3bmCL1OV3kF8WlhMg&oe=654A86DC",
             "https://m.media-amazon.com/images/M/MV5BYTIxNjk3YjItYmYzMC00ZTdmLTk0NGUtZmNlZTA0NWFkZDMwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+            "https://scontent.fcgk42-1.fna.fbcdn.net/v/t39.30808-6/240932807_4042044779240258_4108958082190960483_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dh87sLAM2RYAX__WufN&_nc_ht=scontent.fcgk42-1.fna&oh=00_AfDcatlsehgyuwcJD8iyc9snVhEmG3bmCL1OV3kF8WlhMg&oe=654A86DC",
         ),
 
         Anime(
@@ -80,7 +80,7 @@ object AnimesData {
                     "\n\nMeski Ukyō Kodachi dan Ikemoto bekerja sama untuk versi manga, Ukyō Kodachi juga mengawasi adaptasi anime Boruto bersama dengan Masashi Kishimoto. Sebuah adaptasi anime yang disutradarai oleh Noriyuki Abe mulai tayang di TV Tokyo sejak tanggal 5 April 2017.",
             "2017",
             "Masashi Kishimoto",
-            "https://upload.wikimedia.org/wikipedia/id/thumb/d/db/Boruto_manga_vol_1.jpg/220px-Boruto_manga_vol_1.jpg",
+            "https://m.media-amazon.com/images/S/pv-target-images/57078626b263fe467549cde5bf3a899662d31c13382763c467fd5bedc8f9149c.jpg",
             "https://static.wikia.nocookie.net/samurai8/images/2/2f/Kishimoto_With_Storyboards_of_Samurai_8.png/revision/latest?cb=20190503013136"
         ),
 
@@ -142,6 +142,92 @@ object AnimesData {
             "Sui Ishida",
             "https://static.posters.cz/image/750/plakaty/tokyo-ghoul-ken-kaneki-i28409.jpg",
             "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2tiGSdpLMhlmD4MCZZqd7KKJMYZPPyz7UDSAYrO0C3f5smXbN"
+        ),
+
+        Anime(
+            "13",
+            "Haikyu!!",
+            "Haikyu!! (Jepang: ハイキュー!!, Hepburn: Haikyū!!, dari huruf kanji 排球 terj. har. \"bola voli\"), yang diterbitkan di Indonesia dengan judul Haikyu!! Fly High! Volleyball!, adalah sebuah seri manga shōnen asal Jepang yang ditulis dan diilustrasikan oleh Haruichi Furudate. Bab-bab tunggalnya telah dimuat dalam majalah Weekly Shōnen Jump sejak bulan Februari 2012 hingga Juli 2020. Manga ini pada awalnya dirilis sebagai cerita one shot dalam majalah musiman Jump NEXT! milik Shueisha sebelum dimuat berseri. Per bulan Juli 2020, empat puluh lima volume tankōbon telah diterbitkan oleh Shueisha." +
+                    "\n\nManga ini diadaptasi menjadi seri anime yang diproduksi oleh Production I.G, dan ditayangkan sejak bulan April hingga September 2014. Musim keduanya ditayangkan sejak bulan Oktober 2015 hingga Maret 2016. Musim ketiga ditayangkan sejak bulan Oktober hingga Desember 2016. Musim keempat ditayangkan sejak bulan Januari hingga April 2020.",
+            "2014",
+            "Haruichi Furudate",
+            "https://static.wikia.nocookie.net/haikyuu/images/2/2c/Season_1_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20230924145811",
+            "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974733538/the-art-of-haikyu-9781974733538_hr.jpg"
+        ),
+
+        Anime(
+            "14",
+            "Hunter × Hunter",
+            "Hunter × Hunter (Jepang: ハンター×ハンター, Hepburn: Hantā Hantā, disingkat: HxH) adalah sebuah seri manga shōnen Jepang yang ditulis dan diilustrasikan oleh Yoshihiro Togashi. Manga ini mulai dimuat dalam majalah Weekly Shōnen Jump sejak tanggal 16 Maret 1998, meskipun sering kali mengalami hiatus berkepanjangan sejak tahun 2006." +
+                    "\n\nCeritanya berfokus pada seorang bocah lelaki bernama Gon Freecss, yang mengetahui bahwa ayahnya—yang sudah meninggalkannya sejak masih kecil, sebenarnya merupakan seorang Hunter ternama di dunia, sebuah profesi berlisensi bagi mereka yang berspesialisasi dalam—tetapi tidak terbatas pada—pencarian hal tak lazim layaknya menemukan spesies hewan langka atau tidak dikenal, berburu harta karun, mengunjungi wilayah-wilayah yang belum terjamah, atau memburu individu yang melanggar hukum.",
+            "1998",
+            "Yoshihiro Togashi",
+            "https://cdn.oneesports.gg/cdn-data/2022/05/Anime_HunterxHunter.jpg",
+            "https://s4.anilist.co/file/anilistcdn/staff/large/n96893-QixoFuZYSkpq.png"
+        ),
+
+        Anime(
+            "15",
+            "Death Note",
+            "Death Note (Jepang: デスノート, Hepburn: Desu Nōto) adalah sebuah serial manga shōnen Jepang yang ditulis oleh Tsugumi Ohba dan diilustrasikan oleh Takeshi Obata. Bercerita tentang Light Yagami, seorang remaja jenius[2] yang menemukan buku catatan misterius yang disebut \"Death Note\", yang dimiliki oleh shinigami (dewa kematian) bernama Ryuk, dan memberikan penggunanya kemampuan supranatural untuk membunuh siapapun ketika menulis namanya di buku tersebut." +
+                    "\n\nSerial ini berpusat pada usaha Light Yagami menggunakan Death Note demi mengubah dunia menjadi sebuah \"utopia\" tanpa kejahatan dengan menyamar sebagai sosok dewa penegak keadilan bernama \"Kira\" (キラ, alih aksara Jepang dari kata bahasa Inggris: killer) serta upaya dari sebuah pasukan khusus penegak hukum, yang terdiri dari para anggota kepolisian Jepang pimpinan L Lawliet, seorang detektif internasional yang misterius, demi menangkap dan mengakhiri serangkaian teror dari Kira.",
+            "2006",
+            "Tsugumi Ohba",
+            "https://m.media-amazon.com/images/I/716ASj7z2GL.jpg",
+            "https://allanimemag.files.wordpress.com/2020/04/tsugumi-ohba-writer.jpg"
+        ),
+
+        Anime(
+            "16",
+            "Sword Art Online",
+            "Sword Art Online (Jepang: ソードアート・オンライン) adalah serial novel ringan Jepang yang ditulis oleh Reki Kawahara dan diilustrasikan oleh ABEC. Serial ini berlangsung pada masa depan yang dekat dan berfokus pada berbagai dunia permainan realitas virtual MMORPG. Sword Art Online mulai diterbitkan pada label ASCII Media Works Dengeki Bunko sejak 10 April 2009, dengan peluncuran serial sempalan pada Oktober 2012." +
+                    "\n\nSerial ini telah melahirkan lima adaptasi manga. Sebuah anime yang diproduksi oleh A-1 Pictures ditayangkan di Jepang antara Juli hingga Desember 2012. Anime ini telah dilisensi di Amerika Utara oleh Aniplex of America dan versi bahasa Inggris mulai ditayangkan di Adult Swim Toonami sejak 27 Juli 2013.",
+            "2012",
+            "Reki Kawahara",
+            "https://saop-anime.com/assets/scherzo/img/top/kv.jpg",
+            "https://cdn.myanimelist.net/images/voiceactors/2/53841.jpg"
+        ),
+
+        Anime(
+            "17",
+            "Toradora!",
+            "Toradora! (とらドラ!) adalah sebuah serial novel ringan Jepang yang ditulis oleh Yuyuko Takemiya, dengan ilustrasi oleh Yasu. Serial ini meliputi sepuluh novel yang dirilis sejak 10 Maret 2006 hingga 10 Maret 2009, diterbitkan oleh ASCII Media Works." +
+                    "\n\nTerdapat pula tiga volume novel ringan spin-off, yang berjudul Toradora Spin-off!. Sebuah adaptasi manga oleh Zekkyō memulai serialisasi pada edisi September 2007 majalah shōnen manga Dengeki Comic Gao!. Manga ini menghentikan serialisasi di Dengeki Comic Gao! sejak edisi Maret 2008, tetapi melanjutkan serialisasi di majalah Dengeki Daioh pada edisi Mei 2008.",
+            "2008",
+            "Yuyuko Takemiya",
+            "https://m.media-amazon.com/images/M/MV5BNWEwMjE2MjQtZTQ3NC00OTUxLWEwMWUtMThjZjg4Zjc5ZDYwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+            "https://cdn.myanimelist.net/images/voiceactors/3/60414.jpg"
+        ),
+
+        Anime(
+            "18",
+            "Anohana",
+            "Ano Hi Mita Hana no Namae o Bokutachi wa Mada Shiranai. (Jepang: あの日見た花の名前を僕達はまだ知らない。, terj. har. \"Kita Masih Belum Tahu Nama Bunga yang Kita Lihat Hari Itu.\"), atau Anohana: Bunga yang Kita Lihat Waktu Itu, yang dirilis dalam bahasa Inggris dengan judul Anohana: The Flower We Saw That Day, adalah sebuah seri anime Jepang sebanyak 11 episode tahun 2011 yang diproduksi oleh A-1 Pictures dan disutradarai oleh Tatsuyuki Nagai.",
+            "2011",
+            "Mari Okada",
+            "https://m.media-amazon.com/images/M/MV5BYmQ5Y2RiOTAtMzg2Ni00MzE0LWE0NTItNzExNmMzOGQyY2NjL2ltYWdlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+            "https://cdn.myanimelist.net/images/voiceactors/3/53505.jpg"
+        ),
+
+        Anime(
+            "19",
+            "Yuri on Ice",
+            "Yuri!!! on Ice (Jepang: ユーリ!!! on ICE) adalah sebuah seri televisi anime olahraga Jepang tentang seluncur indah. Seri tersebut diproduksi oleh MAPPA, disutradarai dan ditulis oleh Sayo Yamamoto dengan naskah asli buatan Mitsurō Kubo di bawah naungan Jun Shishido.",
+            "2016",
+            "Sayo Yamamoto",
+            "https://m.media-amazon.com/images/M/MV5BODBkM2JjNzItNjkxMy00Zjc3LWJjYjgtOWE1ODJiODhmZTQ4XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+            "https://static.wikia.nocookie.net/yurionice/images/1/10/Sayo.Yamamoto.jpg/revision/latest?cb=20180703000824"
+        ),
+
+        Anime(
+            "20",
+            "Another",
+            "Another (Jepang: アナザー, Hepburn: Anazā) adalah sebuah novel horor misteri Jepang yang ditulis oleh pengarang Yukito Ayatsuji. diterbitkan pada tanggal 29 Oktober 2009 oleh Kadokawa Shoten. Novel ini telah diadaptasi menjadi sebuah manga, anime dan film laga hidup (live-action)." +
+                    "\n\nAdaptasi manga oleh Hiro Kiyohara mulai dimuat berseri antara Mei 2010 dan Januari 2012 dalam edisi Young Ace terbitan Kadokawa Shoten. Baik novel maupun manga telah dilisensikan di Amerika Utara oleh Yen Press.",
+            "2012",
+            "Yukito Ayatsuji",
+            "https://m.media-amazon.com/images/M/MV5BNWYzNmZmMTUtNzI1YS00NTYwLWIxYWQtMThmYjY1Y2MwZDc2XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_FMjpg_UX1000_.jpg",
+            "https://pm1.aminoapps.com/6539/5318aac3bedc67ca4b3b6f2501d13a640f898533_00.jpg"
         )
     )
 }

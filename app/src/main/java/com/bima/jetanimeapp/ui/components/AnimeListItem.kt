@@ -27,6 +27,9 @@ fun AnimeListItem(
     modifier: Modifier = Modifier,
 ) {
     ElevatedCard(
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 6.dp
+        ),
         modifier = modifier.width(190.dp),
         shape = RoundedCornerShape(8.dp),
         colors = CardDefaults.cardColors(

@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">JetAnimeApp</string>
+    <string name="header">Anime App</string>
     <string name="menu_home">Home</string>
     <string name="menu_favorite">Favorite</string>
     <string name="menu_about">About</string>
     <string name="search_anime">Search Anime</string>
-    <string name="picture_profile"></string>
+    <string name="picture_profile">https://i.imgur.com/RdgEKtO.jpg</string>
     <string name="my_name">Bima Prasetio</string>
     <string name="my_email">bimaprast1601@gmail.com</string>
     <string name="empty_fav">No Favorite Anime Yet</string>

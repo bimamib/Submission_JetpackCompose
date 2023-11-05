@@ -2,7 +2,7 @@ package com.bima.jetanimeapp.ui.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.material3.Button
+import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -15,7 +15,7 @@ fun FindMoreButton(
     modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {
-    Button(
+    ExtendedFloatingActionButton(
         onClick = onClick,
         modifier = modifier
             .fillMaxWidth()
