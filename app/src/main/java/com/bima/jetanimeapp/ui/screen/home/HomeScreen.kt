@@ -14,7 +14,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.bima.jetanimeapp.di.Injection
@@ -23,7 +22,6 @@ import com.bima.jetanimeapp.model.AnimeItem
 import com.bima.jetanimeapp.ui.common.UiState
 import com.bima.jetanimeapp.ui.components.AnimeListItem
 import com.bima.jetanimeapp.ui.components.SearchBar
-import com.bima.jetanimeapp.ui.theme.JetAnimeAppTheme
 
 @Composable
 fun HomeScreen(

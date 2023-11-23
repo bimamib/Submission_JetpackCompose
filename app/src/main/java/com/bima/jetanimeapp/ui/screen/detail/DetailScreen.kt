@@ -38,8 +38,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -151,7 +153,9 @@ fun DetailContent(
                         modifier = modifier.padding(top = 4.dp)
                     ) {
                         val icon =
-                            if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder
+                            if (isFavorite) ImageVector.vectorResource(id = R.drawable.bookmark_solid) else ImageVector.vectorResource(
+                                id = R.drawable.bookmark_line
+                            )
                         Icon(
                             imageVector = icon,
                             tint = if (isFavorite) MaterialTheme.colorScheme.primary else Color.Black,
@@ -165,9 +169,17 @@ fun DetailContent(
                 contentDescription = "banner",
                 contentScale = ContentScale.Crop,
                 modifier = modifier
-                    .height(350.dp)
+                    .height(400.dp)
+                    .padding(start = 10.dp, end = 10.dp, top = 20.dp)
                     .fillMaxWidth()
-                    .clip(RoundedCornerShape(bottomStart = 20.dp, bottomEnd = 20.dp))
+                    .clip(
+                        RoundedCornerShape(
+                            bottomStart = 10.dp,
+                            bottomEnd = 10.dp,
+                            topStart = 10.dp,
+                            topEnd = 10.dp
+                        )
+                    )
             )
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
@@ -175,7 +187,7 @@ fun DetailContent(
             ) {
                 Text(
                     text = animeName,
-                    textAlign = TextAlign.Justify,
+                    textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.ExtraBold,
                         color = MaterialTheme.colorScheme.primary
@@ -202,7 +214,7 @@ fun DetailContent(
                     color = MaterialTheme.colorScheme.primary,
                     textAlign = TextAlign.Left,
                     modifier = modifier
-                        .padding(top = 16.dp, bottom = 5.dp)
+                        .padding(top = 15.dp, bottom = 5.dp)
                         .align(Alignment.Start)
                 )
                 Row(
@@ -222,7 +234,7 @@ fun DetailContent(
                     Column {
                         Text(
                             text = author,
-                            fontSize = 16.sp,
+                            fontSize = 15.sp,
                             fontWeight = FontWeight.Bold,
                             modifier = modifier
                                 .padding(top = 5.dp)
@@ -234,11 +246,11 @@ fun DetailContent(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(5.dp)
-                        .padding(top = 16.dp)
+                        .padding(top = 15.dp)
                         .background(Color.LightGray)
                 )
                 Column(
-                    modifier = modifier.padding(top = 16.dp)
+                    modifier = modifier.padding(top = 15.dp)
                 ) {
                     FindMoreButton(
                         text = "Find Out More",

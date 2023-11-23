@@ -13,7 +13,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.vectorResource
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -40,13 +42,7 @@ fun JetAnimeApp(
     Scaffold(
         modifier = modifier,
         bottomBar = {
-            if (currentRoute != Screen.DetailAnime.route) {
-                if (currentRoute != Screen.Favorite.route) {
-                    if (currentRoute != Screen.About.route) {
-                        BottomBar(navController = navController)
-                    }
-                }
-            }
+            BottomBar(navController = navController)
         },
     ) { innerPadding ->
         NavHost(
@@ -105,17 +101,17 @@ private fun BottomBar(
         val navigationItems = listOf(
             NavigationItem(
                 title = stringResource(R.string.menu_home),
-                icon = Icons.Default.Home,
+                icon = ImageVector.vectorResource(id = R.drawable.home_menu),
                 screen = Screen.Home
             ),
             NavigationItem(
                 title = stringResource(R.string.menu_favorite),
-                icon = Icons.Default.Favorite,
+                icon = ImageVector.vectorResource(id = R.drawable.bookmark_solid),
                 screen = Screen.Favorite
             ),
             NavigationItem(
                 title = stringResource(R.string.menu_about),
-                icon = Icons.Default.Person,
+                icon = ImageVector.vectorResource(id = R.drawable.about_profile),
                 screen = Screen.About
             ),
         )
