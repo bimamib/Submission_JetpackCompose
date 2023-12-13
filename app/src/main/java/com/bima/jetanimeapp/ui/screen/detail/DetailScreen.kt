@@ -141,7 +141,7 @@ fun DetailContent(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ArrowBack,
+                        imageVector = ImageVector.vectorResource(id = R.drawable.arrow_left_long),
                         tint = Color.Black,
                         contentDescription = stringResource(R.string.back),
                         modifier = Modifier
